@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRRS Login/Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Campus Resource Reservation System</h1>
+        <h2>Login / Signup</h2>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" id="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="password" required>
+
+        <label>
+            <input type="checkbox" id="is_admin"> Register as Admin (Do this ONLY for the first Admin user!)
+        </label>
+        <br>
+
+        <button onclick="handleAuth(false)">Login</button>
+        <button onclick="handleAuth(true)">Signup</button>
+    </div>
+</body>
+</html>

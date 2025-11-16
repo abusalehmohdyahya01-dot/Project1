@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Dashboard 👋</h1>
+        <p>Logged in as: <span id="user-email"></span> <button onclick="logout()">Logout</button></p>
+
+        <hr>
+
+        <h2>View Resources</h2>
+        <div id="resource-list" class="resource-list">
+            <p>Loading resources...</p>
+        </div>
+
+        <hr>
+
+        <h2>Request New Booking</h2>
+        <form id="booking-form">
+            <label for="resource-id"><b>Resource:</b></label>
+            <select id="resource-id" required>
+                <option value="">-- Loading Resources --</option>
+            </select>
+
+            <label for="booking-date"><b>Date:</b></label>
+            <input type="date" id="booking-date" required>
+
+            <label for="booking-time"><b>Time:</b></label>
+            <input type="time" id="booking-time" required>
+
+            <label for="booking-purpose"><b>Purpose:</b></label>
+            <input type="text" id="booking-purpose" placeholder="e.g., Team meeting" required>
+
+            <button type="button" onclick="submitBooking()">Submit Request</button>
+        </form>
+
+        <hr>
+
+        <h2>My Bookings Status</h2>
+        <div id="my-bookings-list" class="booking-list">
+            </div>
+    </div>
+</body>
+</html>
