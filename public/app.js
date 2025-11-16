@@ -16,7 +16,7 @@ const db = firebase.database();
 
 // --- 2. BACKEND API URL ---
 // !!! IMPORTANT: FOR DEPLOYMENT, REPLACE THIS LOCAL URL WITH YOUR LIVE RENDER/RAILWAY URL !!!
-const FLASK_BASE_URL = 'http://127.0.0.1:5001'; 
+const FLASK_BASE_URL = 'https://unibooker.onrender.com'; 
 
 let currentUserId = null;
 let currentUserEmail = null;
