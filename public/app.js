@@ -1,7 +1,7 @@
 // --- 1. FIREBASE CONFIGURATION ---
 // IMPORTANT: This object is unique to your project.
 const firebaseConfig = {
-    apiKey: "AIzasyAqbgE4DN89sphQXbz9Vp2KK0IN23rY", 
+    apiKey: "AIzaSyAqBgeY4dN89sPhQxbz9vVp2xKkOIN23rY", 
     authDomain: "campus-resource-reservationapp.firebaseapp.com",
     databaseURL: "https://campus-resource-reservationapp-default-rtdb.firebaseio.com",
     projectId: "campus-resource-reservationapp",
