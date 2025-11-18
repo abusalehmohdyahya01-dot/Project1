@@ -1,14 +1,14 @@
 // --- 1. FIREBASE CONFIGURATION ---
 // IMPORTANT: This object is unique to your project.
 const firebaseConfig = {
-    apiKey: "AIzaSyAqBgeY4dN89sPhQxbz9vVp2xKkOIN23rY", 
-    authDomain: "campus-resource-reservationapp.firebaseapp.com",
-    databaseURL: "https://campus-resource-reservationapp-default-rtdb.firebaseio.com",
-    projectId: "campus-resource-reservationapp",
-    storageBucket: "campus-resource-reservationapp.firebasestorage.app",
-    messagingSenderId: "42359151457",
-    appId: "1:42359151457:web:453dcbaa777b8b2c506720",
-    measurementId: "G-EL5RMM54PZ"
+  apiKey: "AIzaSyAqBgeY4dN89sPhQxbz9vVp2xKkOIN23rY",
+  authDomain: "campus-resource-reservationapp.firebaseapp.com",
+  databaseURL: "https://campus-resource-reservationapp-default-rtdb.firebaseio.com",
+  projectId: "campus-resource-reservationapp",
+  storageBucket: "campus-resource-reservationapp.firebasestorage.app",
+  messagingSenderId: "423591151457",
+  appId: "1:423591151457:web:4530cbaa777b8b2c506720",
+  measurementId: "G-EL5RMM54PZ"
 };
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
